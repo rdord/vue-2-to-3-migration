@@ -25,4 +25,6 @@ const clientTitleMixin = {
   }
 }
 
-export default (import.meta.env.SSR ? serverTitleMixin : clientTitleMixin);
+export default import.meta.env.SSR
+  ? serverTitleMixin
+  : clientTitleMixin
